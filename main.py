@@ -1,5 +1,6 @@
 import pexpect
-child = pexpect.spawn("telnet 54.250.238.180 32773")
+child = pexpect.spawn("telnet 54.250.238.180 32774")
+child.sendline("\r\n")
 child.sendline("\r\n")
 child.expect(">")
 child.sendline("enable")
